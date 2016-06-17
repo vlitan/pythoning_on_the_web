@@ -1,4 +1,6 @@
 #fooling around
+#parse fb messages and send data on serial
+#eg: turn on and off a LED
 import serial
 from pyvirtualdisplay import Display
 from selenium import webdriver
@@ -22,7 +24,7 @@ browser = webdriver.Firefox();
 browser.get('http://www.facebook.com/messages/virgil.zappa');
 browser.maximize_window();
 
-login('clapavlad@yahoo.com', 'Rock7metal');
+login('<email>', '<pass>');
 
 ser = serial.Serial('/dev/ttyACM0', 9600);
 
